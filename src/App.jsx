@@ -13,14 +13,28 @@ import cardimg7 from '/public/card-img-7.png'
 import cardimg8 from '/public/card-img-5.png'
 import cardimg9 from '/public/card-img-9.png'
 import cardimg10 from '/public/card-img-10.png'
+import groups from '/public/group-images.png'
 import icon1 from '/icon1.svg'
 import icon2 from '/icon2.svg'
+import headericon1 from '/public/header-icon1.svg'
+import headericon2 from '/header-icon2.svg'
+import headericon3 from '/header-icon-3.svg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div className="container container2">
+      <Header img={headericon1} title={"Тезкор етказиш"}  />
+      <Header img={headericon2} title={"Тўлов химояси"}  />
+      <Header img={headericon1} title={"Юқори сифат"}  />
+      <Header img={headericon3} title={"Энг сара китоблар"}  />
+    </div>
+    <div className="container">
+    <h2 className="title">Рукнлар</h2>
+      <img src={groups} alt="img" />
+    </div>
     <div className="container">
 
     <h2 className="title">Янги қўшилганлар</h2>

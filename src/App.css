@@ -80,3 +80,8 @@
   gap: 30px;
   flex-wrap: wrap;
 }
+.container2{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
