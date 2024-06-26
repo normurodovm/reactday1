@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { MainCard } from './components/card/main-card'
 import { Header } from './components/header/header'
+import { Footerfunc } from './footer/footer'
 import cardimg1 from '/public/card-img-1.png'
 import cardimg2 from '/public/card-img-2.png'
 import cardimg3 from '/public/card-img-3.png'
@@ -25,37 +26,40 @@ function App() {
 
   return (
     <>
-    <div className="container container2">
+    <div className="container mx-auto m-0 p-0 box-border max-w-[1300px] container2">
       <Header img={headericon1} title={"Тезкор етказиш"}  />
       <Header img={headericon2} title={"Тўлов химояси"}  />
       <Header img={headericon1} title={"Юқори сифат"}  />
       <Header img={headericon3} title={"Энг сара китоблар"}  />
     </div>
-    <div className="container">
-    <h2 className="title">Рукнлар</h2>
+    <div className="container mx-auto m-0 p-0 box-border max-w-[1300px]">
+    <h2 className="font-semibold text-4xl leading-[1.25] text-[#242424] mt-16 mb-8">Рукнлар</h2>
       <img src={groups} alt="img" />
     </div>
-    <div className="container">
+    <div className="container mx-auto m-0 p-0 box-border max-w-[1300px]">
 
-    <h2 className="title">Янги қўшилганлар</h2>
-      <div className='product'>
+    <h2 className="font-semibold text-4xl leading-[1.25] text-[#242424] mt-16 mb-8">Янги қўшилганлар</h2>
+      <div className="flex flex-wrap gap-[30px]">
         <MainCard img={cardimg1} title={"1984"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         <MainCard img={cardimg2} title={"Rich dad poor dad"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         <MainCard img={cardimg3} title={"Код 8"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         <MainCard img={cardimg4} title={"Даниел КИЗ"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
-        <MainCard img={cardimg5} title={"Бепарволикнинг но..."} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
+        <MainCard img={cardimg5} title={"Бепарволикнинг"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
       </div>
     </div>
-    <div className="container">
-      <h2 className="title">Аудио китоблар</h2>
-        <div className="product">
+    <div className="container mx-auto m-0 p-0 box-border max-w-[1300px]">
+      <h2 className="font-semibold text-4xl leading-[1.25] text-[#242424] mt-16 mb-8">Аудио китоблар</h2>
+        <div className="flex flex-wrap gap-[30px]">
         <MainCard img={cardimg6} title={"1984"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         <MainCard img={cardimg7} title={"Rich dad poor dad"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         <MainCard img={cardimg8} title={"Код 8"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         <MainCard img={cardimg9} title={"Даниел КИЗ"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
-        <MainCard img={cardimg10} title={"Бепарволикнинг но..."} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
+        <MainCard img={cardimg10} title={"Бепарволикнинг"} text={"SIYOSAT, FANTASTIKA"} before={icon1} after={icon2} />
         </div>
         </div>
+        <section>
+          <Footerfunc/>
+        </section>
     </>
   )
 }
